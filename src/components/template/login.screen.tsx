@@ -1,10 +1,25 @@
 import React, { FC } from "react";
-import { P } from "../atoms/typography";
+import LoginForm from "../organisms/loginForm";
 
 const LoginScreen: FC<LoginScreenProps> = (props: LoginScreenProps) => {
-  return <div className="flex flex-1 flex-row bg-red-500 h-full">l</div>;
+  return (
+    <div className="flex flex-1 flex-row h-full">
+      <div className="flex flex-col justify-center border-r">
+        <LoginForm />
+      </div>
+      <div className="flex flex-1 justify-center flex-col">
+        <img
+          alt=""
+          src={props.BackgroundImage}
+          style={{ width: "100%", height: "auto" }}
+        />
+      </div>
+    </div>
+  );
 };
 
-export interface LoginScreenProps {}
+export interface LoginScreenProps {
+  BackgroundImage: any;
+}
 
 export default LoginScreen;

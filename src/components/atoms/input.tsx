@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import styled, { css } from "styled-components";
 import { colors } from "./theme";
-import { P } from "./typography";
 
 const StyledInput = styled.input<InputProps>`
   background-color: ${colors.input_background};
@@ -36,12 +35,12 @@ const StyledInput = styled.input<InputProps>`
     letter-spacing: 1px;
   }
 
-  ${props =>
+  ${(props) =>
     props.width &&
     css`
       width: ${props.width}px;
     `}
-  ${props =>
+  ${(props) =>
     props.block &&
     css`
       width: calc(100% - 3%);
