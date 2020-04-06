@@ -17,19 +17,81 @@ code {
 }
 
 .collapse {
-  position: absolute;
+  position: relative;
+  z-index: 100;
+  padding-top: 18px;
+  padding-right: 30px;
+  width: 10px;
   height: 100%;
-  width: 50px;
-  background-color: yellow;
-  cursor: pointer;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.25);
+  background-color: #2a5e7a;
+  overflow: auto;
   transition: 0.5s;
+  cursor: pointer;
+  overflow: initial;
+}
+
+.collapse2 {
+  position: relative;
+  z-index: 90;
+  padding-top: 18px;
+  width: 65px;
+  height: 100%;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  overflow: auto;
+  transition: 0.5s;
+  cursor: pointer;
+  overflow: initial;
 }
 
 .expand {
-  position: absolute;
+  position: relative;
+  z-index: 100;
+  align-items: flex-start;
+  padding-top: 18px;
+  width: 80px;
   height: 100%;
-  width: 200px;
-  background-color: red;
-  cursor: pointer;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.25);
+  background-color: #0f3a52;
+  overflow: auto;
   transition: 0.5s;
+  cursor: pointer;
+  overflow: initial;
+}
+
+.expand2 {
+  position: relative;
+  z-index: 90;
+  padding-top: 18px;
+  width: 282px;
+  height: 100%;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  overflow: auto;
+  transition: 0.5s;
+  cursor: pointer;
+  overflow: initial;
+}
+
+.buttonToggle {
+  position: absolute;
+  right: -10px;
+  width: 27px;
+  height: 27px;
+  background-color: #0f3a52;
+  border-radius: 100px;
+  bottom: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sec-nav-active {
+  background-color: #deefeb;
+  color: #1bc198;
+  margin-right: 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-left: 8px;
 }
